@@ -106,7 +106,7 @@ string Tree::relation(string name)//Return relation of the given name, starting 
     {
         int level=Tree::level(this->root,name,1);
         node*found=search_name(name);
-        if(level!=1&&found!=NULL)
+        if(level==1&&found!=NULL)
             return "me";
         
         if(found->gender=="male")
